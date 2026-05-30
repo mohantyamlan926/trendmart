@@ -1,0 +1,6 @@
+{
+  "name": "Trend Mart",
+  "description": "A premium e-commerce platform for exclusive 3D toy figurines featuring interactive carousels, responsive catalog, and custom cart checkout.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

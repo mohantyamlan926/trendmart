@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-anton: 'Anton', 'Impact', sans-serif;
+}
+
+/* Custom continuous rotating keyframes for solar ears and toys */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 20px 25px rgba(0,0,0,0.15));
+  }
+  50% {
+    transform: scale(1.03);
+    filter: drop-shadow(0 30px 40px rgba(0,0,0,0.25));
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 6s ease-in-out infinite;
+}
